@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buscador de películas</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
     <h1>🎬Buscador de peliculas</h1>
     <div class="search-container">
@@ -17,9 +20,9 @@
       />
       <button onclick="MoviesSearch()">Buscar</button>
     </div>
-    <div id="results" class="results-grid"></div>
-    <section id="movie" class="d-flex flex-wrap justify-content-center"></section>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
-    <script src="script.js"></script>
+    <div
+      id="results"
+      class="results-grid d-flex flex-wrap justify-content-center"
+    ></div>
   </body>
 </html>
